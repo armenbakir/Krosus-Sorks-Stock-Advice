@@ -7,13 +7,13 @@
 }
 
 .start-page-btn {
-  width: 45rem;
+  width: 35rem;
   height: 20rem;
   background: linear-gradient(135deg, #f42f5f, #8e25bf);
   border: none;
   border-radius: 1rem;
   font-family: "Exo 2", sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #eee;
   text-transform: uppercase;
@@ -26,4 +26,12 @@
 
 .start-page-btn:active {
   transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+  .start-page-btn {
+    width: 20rem;
+    height: 15rem;
+    font-size: 3rem;
+  }
 }
