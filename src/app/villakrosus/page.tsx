@@ -7,7 +7,7 @@ import ReportGenerator from "../../components/ReportGenerator";
 import "../StockApp.css";
 import Image from "next/image";
 
-export default function Ticker() {
+export default function VillaKrosus() {
   const [tickers, setTickers] = useState<string[]>([]);
 
   const addTicker = (ticker: string) => {
