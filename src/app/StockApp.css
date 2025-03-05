@@ -1,0 +1,164 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #f7fafc;
+  color: #1a202c;
+  font-family: Arial, sans-serif;
+}
+
+.stock-app {
+  margin-top: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  min-height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: 16rem;
+}
+
+header span {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a5568;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+}
+
+section {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+#ticker-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #4a5568;
+  display: block;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#ticker-input {
+  flex-grow: 1;
+  padding: 8px 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+#ticker-input:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+}
+
+.add-button {
+  width: 40px;
+  height: 40px;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #3182ce;
+}
+
+.generate-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 8px 0;
+  background-color: #a0aec0;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: not-allowed;
+}
+
+.generate-button.active {
+  background-color: #38a169;
+  cursor: pointer;
+}
+
+.generate-button.active:hover {
+  background-color: #2c7b50;
+}
+
+.loading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.loading-section img {
+  width: 48px;
+  height: 48px;
+}
+
+footer {
+  margin-top: 24px;
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.reset-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #e53e3e;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #c53030;
+}
+
+.report-section {
+  padding-top: 6;
+  padding-bottom: 6;
+  font-size: 12px;
+}
